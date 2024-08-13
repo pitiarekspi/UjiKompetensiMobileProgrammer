@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddEditNote">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul_note"
+        android:layout_marginTop="10dp"
+        android:autofillHints="text"
+        android:backgroundTint="#000000"
+        android:hint="Nama Lengkap"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textSize="18sp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etBornDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:gravity="top"
+        android:hint="Tanggal Lahir"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:clickable="true"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBornDate"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:gravity="top"
+        android:hint="Jenis Kelamin"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etGender"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:gravity="top"
+        android:hint="Alamat"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:textSize="18sp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:padding="16dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/judul_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Data Mahasiswa"
+        android:textSize="20sp" />
+
+</RelativeLayout>

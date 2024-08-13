@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_height="192dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/icon_people" />
+
+    <Button
+        android:id="@+id/btnListData"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/baseline_person_2_24"
+        android:drawableTint="@color/white"
+        android:layout_weight="1"
+        android:text="LIHAT DATA" />
+
+    <Button
+        android:id="@+id/btnInput"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnListData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/baseline_border_color_24"
+        android:drawableTint="@color/white"
+        android:layout_weight="1"
+        android:text="INPUT DATA" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawableTint="@color/white"
+        android:layout_weight="1"
+        android:text="INFORMASI" />
+
+</RelativeLayout>
